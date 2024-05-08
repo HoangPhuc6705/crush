@@ -17,7 +17,7 @@ button.addEventListener('click', (event) => {
     ratio_of_successfull: ratio_of_successfull
   }
 
-  axios.post('http://localhost:3000/crushs', data).then(() => {
+  axios.post('https://sever-1ui78jil5-hoangphucs-projects-5b66d32b.vercel.app/crushs', data).then(() => {
     alert('Dữ liệu đã được lưu thành công')
   }).then(() => console.log('Send')).catch((err) => console.error(err));
 })
