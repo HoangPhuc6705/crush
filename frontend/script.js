@@ -18,6 +18,6 @@ button.addEventListener('click', (event) => {
   }
 
   axios.post('http://localhost:3000/crushs', data).then(() => {
-    alert('Dữ liệu đã được lưu thành công')
+    // alert('Dữ liệu đã được lưu thành công')
   }).then(() => console.log('Send')).catch((err) => console.error(err));
 })
