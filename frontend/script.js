@@ -17,7 +17,11 @@ button.addEventListener('click', (event) => {
     ratio_of_successfull: ratio_of_successfull
   }
 
-  axios.post('http://localhost:3000/crushs', data).then(() => {
+  // https://vercel-sever.vercel.app/crushs
+  axios.post('https://vercel-sever-9gh4.vercel.app/crushs', data).then(() => {
     // alert('Dữ liệu đã được lưu thành công')
-  }).then(() => console.log('Send')).catch((err) => console.error(err));
+  }).then(() => {
+    console.log('send');
+    // return null;
+  }).catch((err) => console.error('Éo gửi được dũ liệu',err));
 })
