@@ -9,7 +9,7 @@ button.addEventListener('click', (event) => {
 
   const ratio_of_successfull = Math.round(Math.random() * 101);
 
-  result.innerHTML = `Tỉ lệ thành công của bạn và crush là: ${ratio_of_successfull}%`
+  result.innerHTML = `Tỉ lệ qua môn của bạn và ${crushname} là: ${ratio_of_successfull}%`
 
   const data = {
     name: name,
